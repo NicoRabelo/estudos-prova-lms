@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> minha primeira página HTML 5</title>
+        <meta charset="UTF-8" />
+    </head>
+    <body>
+        <!--h1 é o cabeçalho principal, h2 é subtítulo principal dentro do conteúdo-->
+        <h2>Entre com suas informações</h2>
+        <!--form é formulário-->
+        <form action="https://httpbin.org/post" method="post">
+            Primeiro Nome:
+            <input 
+                type="text"
+                name="firstname"
+             />
+
+             <!--br é para inserir uma quebra de linha-->
+            <br/>
+            <br/>
+            Segundo Nome:
+            <input 
+                type="text"
+                name="surname"
+            />
+            <br/>
+            <br/>
+            Email:
+            <input
+                type="email"
+            />
+            <br/>
+            <br/>
+            Password:
+            <input 
+                type="password"
+                name="password"
+            />
+
+            <br/>
+            <br/>
+            Curso: <br/> <!--radio clicar ou um ou outro-->
+            <input type="radio" name="Curso" value="DD" checked/>Design Digital <br/>
+            <input type="radio" name="Curso" value="SI" />Sistemas da Informação  <br/>
+            <input type="radio" name="Curso" value="EC" /> Engenharia da Computação  <br/>
+            <br/>
+            <br/>
+            Áreas de interesse: <br/> <!--Checkbox, pode escolher várias caixinhas-->
+            <input type="checkbox" name="area1" value="CG" />Computação Gráfica <br/>
+            <input type="checkbox" name="area1" value="AL" />Algorítimos <br/>
+            <input type="checkbox" name="area1" value="DE" />Desenho <br/>
+            <br/>
+            <input 
+                type="submit"
+                value="Enviar"
+            />
+
+        </form>
+    </body>
+</html>

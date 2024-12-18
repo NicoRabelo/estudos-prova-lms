@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Pokedex</title>
+        <meta charset="UTF-8" />
+       
+        <style>
+            .flex-container{
+                background-color: dodgerblue;
+                /* padding define a distância entre o conteúdo do elemnto e suas bordas*/
+                padding: 10px;
+
+                display: flex;
+                /* modifica a direção do eixo principal (main axis)*/
+                flex-direction: row;
+                /* empacota os elementos filhos pra não ter overflow - o padrão é "nowrap"*/
+                /*flex-wrap: wrap;*/
+                /*atalho (shorthand) pra flex-direction e flex-wrap*/
+                /*flex-flow: row wrap;*/
+                /*obedece o que foi decidido em flex-direction*/
+                justify-content: flex-start;
+                /*obedece o eixo perpendicular ao eixo que foi definido em flex-direction*/
+                align-items: flex-start;
+            }
+            /*flex-container > div Define o estilo para todos os elementos <div> diretamente dentro do contêiner com a classe flex-container*/
+           .flex-container > div {
+                background-color: azure;
+                width: 50px;
+                height: 50px;
+                margin: 10px;
+                font-size: xx-large;
+            }
+        </style>
+    </head>
+    <body>
+        <!--div container (vai conter outras divs)-->
+        <div class="flex-container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <!--<div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>-->
+        </div>
+        
+    </body>
+</html>
